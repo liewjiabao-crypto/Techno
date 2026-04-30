@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root,
+.light {
+  --bg: 255 247 253;
+  --panel: 255 255 255;
+  --panel2: 252 231 243;
+  --text: 63 22 44;
+  --muted: 134 75 110;
+  --border: 247 183 220;
+  --lime: 52 211 153;
+  --amber: 251 191 36;
+  --cyan: 56 189 248;
+  --danger: 244 63 94;
+  --pink: 236 72 153;
+  --violet: 168 85 247;
+  --font-display: "Baloo 2", system-ui, sans-serif;
+  --font-body: "Nunito", system-ui, sans-serif;
+}
+
+.dark {
+  --bg: 35 18 32;
+  --panel: 53 26 48;
+  --panel2: 68 31 61;
+  --text: 255 237 250;
+  --muted: 252 180 225;
+  --border: 121 52 96;
+}
+
+body {
+  background: rgb(var(--bg));
+  color: rgb(var(--text));
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: rgba(236, 72, 153, 0.25);
+}
